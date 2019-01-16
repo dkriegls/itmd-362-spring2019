@@ -209,7 +209,8 @@ nav {
 #calendar #nav-cal a,
 #projects #nav-pro a,
 #policies #nav-pol a,
-#due_date #nav-dat a {
+#due_date #nav-dat a,
+#link #nav-lnk a {
   background-color: #FFCE0B;
 }
 
@@ -347,7 +348,8 @@ td {
   width: 120px;
 }
 .redfont {
-	color: red;
+	color: white;
+  background-color: red;
 }
 .darkredfont {
   color: #d70000;
