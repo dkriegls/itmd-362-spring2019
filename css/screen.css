@@ -303,7 +303,7 @@ nav {
 /* Table */
 table {
 	table-layout: fixed;
-	width: 750px;
+	width: 100%;
   margin-bottom: 1em;
 }
 table, th, td {
@@ -315,20 +315,15 @@ table, th, td {
 	text-align: center;
   font-weight: 700;
 }
-.tabletitle {
-  padding-bottom: 15px;
-  padding-top: 15px;
-  border-left: none;
-}
+
 #protable {
   margin-bottom: 0;
 }
 tr .firstrow {
 	border-right: none;
-	width: 75px;
-}
-tr .secondrow {
-	text-align: left;
+	width: 80px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 td a {
 	font-weight: 700;
@@ -357,13 +352,16 @@ td {
 #tablep {
 	width: 80%
 }
-.addeventstc {
-	margin: 10px;
-	margin-left: 30%;
-	margin-right: 30%;
+
 }
 #h3wide {
   width: 750px;
+}
+
+.topic {
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
 }
 
 /* Policies */ 
@@ -387,6 +385,31 @@ td {
   display: block;
   margin: 0 auto;
   width: 70%;
+}
+
+/* Button*/
+.accordion {
+  background-color: #777;
+  color: #333;
+  cursor: pointer;
+  padding: 0.6315789474em;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #594e51;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.accordion h3{
+  font-size: 1.3em; /* ~ 19px @ 25.537px/em */
+}
+
+.active, .accordion:hover {
+  background-color: #9D6D72;
+}
+.panel{
+  padding: 18px 0;
+  display: none;
+  overflow: hidden;
 }
 
 /* ========== State ========== */
@@ -453,8 +476,8 @@ td {
   .primary,
   #instructor,
   #links {
-    padding-left: 14.28571429%; /* 93/651 */
-    padding-right: 28.57142857%; /* 186/651 */
+    padding-left: 15%;
+    padding-right: 15%;
   }
   .tagline,
   .fineprint {
