@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <link rel="stylesheet" href="css/screen.css" media="screen" />
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <script async src="js/site.js"></script>
 </head>
 <body>
   <div id="page">
@@ -28,16 +29,16 @@
     <main>
       <section class="primary">
         <h2 class="label">Major Projects</h2>
-        <article>
-          <h3 id="project-one">Project One: Onboarding</h3>
-          <section class="description">
+        <button class="accordion">
+          <h3>Project One: On-boarding</h3>
+        </button>
+        <div class="panel">
+          <section id="project-one" class="description">
             <h4>Project Description</h4>
             <p>
               You will create a single-page design that features a sign-up process to get new
               users to join some type of project, such as an email list, a software beta test, or an
-              open-source community. Focus on designing for an effortless, engaging entry of personal
-              information; and friendly, frictionless client-side tests and alerts for malformed,
-              missing, or incomplete information. The goal of this project is to experiment with
+              open-source community. The goal of this project is to experiment with
               patterns of interaction that persuade someone to sign up for whatever it is you’re
               offering, which is not at all an easy task.
             </p>
@@ -45,11 +46,9 @@
           <section class="goals">
             <h4>Project Goals</h4>
             <ul>
-              <li>Create a touch-friendly, mobile-first responsive web design</li>
-              <li>Experiment with design and interaction patterns for pleasing user experience</li>
-              <li>Design progressively enhanced page using at least two media queries</li>
+              <li>Create a mobile-first responsive web design using two media queries</li>
               <li>Apply design principles including typography, color, and material design</li>
-              <li>Engage in agile, iterative development; documented with plenty of commit comments</li>
+              <li>Engage in agile, iterative development; documented with at least 20 commits with informative comments</li>
             </ul>
           </section>
           <section class="deliverables">
@@ -64,6 +63,9 @@
                     The URL to your GitHub repository, and the URL to your Github Pages live link
                   </li>
                   <li>
+                    Screen shot of your html and css validations
+                  </li>
+                  <li>
                     Two questions eliciting feedback on from fellow students
                   </li>
                 </ul> 
@@ -72,28 +74,26 @@
                 <strong>Second Deliverable:</strong> Give constructive comments to help at least three other students.
               </li>
               <li>
-                <strong>Third Deliverable:</strong> Edit your original Basecamp post under Project 1 by fixing your code 
-                based on feedback from the professor and fellow students. Additionally, add the following:
-                <ul>
-                  <li>
-                    Add a 3-4 sentence self-critique memo of your project and your progress in class to this point
-                  </li>
-                </ul>
-               </li>
+                Post a screen shot of your three comments to the comments folder in your personal Basecamp folder.
+              </li>
+              <li>
+                <strong>Third Deliverable:</strong> You will receive a list on your Basecamp post of required fixes from the professor. 
+                Fix your code and edit your original Basecamp post with the words "FINAL TURN IN"
+              </li>
             </ol>
           </section>
           <section class="requirements">
             <h4>Requirements</h4>
             <ul>
               <li>
-                Project must be built with only one valid well-formed HTML file, one valid CSS file,
+                Project must be built with only one valid well-formed HTML file, one css reset file, one user CSS file,
                 and one JavaScript file.
               </li>
               <li>
                 All source files in UTF-8/Unicode character encoding.
               </li>
               <li>
-                No code-generators like WYSIWYGs, Bootstrap, or other off-the-shelf frameworks
+                Do not use any pre-build code or frameworks. Write it all from scratch.
               </li>
               <li>
                 HTML, CSS, and JavaScript files should both be indented with 2 spaces per level of
@@ -110,7 +110,7 @@
                   </li>
                   <li>
                     At least three HTML form elements, written in conjunction with
-                    <code>&lt;label&gt;</code> tags and the <code>for</code> attribute
+                    <code>&lt;label&gt;</code> tags and the for: attribute
                   </li>
                   <li>
                     Semantically structured text-based HTML content to accompany any media elements
@@ -121,11 +121,16 @@
               <li>CSS requirements:
                 <ol>
                   <li>
-                    CSS file should open with a set of reset styles. Meyers, and the Form section of Normalize. 
+                    One css file for resetes (Meyers and the Form section of Normalize). A second 
+                    css file for your unique css code. 
                   </li>
                   <li>
                     Use at least two min-width media queries to enhance your mobile-first styles for
                     larger screens
+                  </li>
+                  <li>
+                    Much of your grade depends on design principles of typography, color, and material design
+                    that are discussed in this class. Make sure to demonstrate some grasp of these concepts. 
                   </li>
                 </ol>
               </li>
@@ -137,14 +142,14 @@
                     requiring interaction)
                   </li>
                   <li>
-                    JavaScript that uses only asynchronous methods and callbacks
+                    Use the asynchronous attribute to attach JavaScript within your html head
                   </li>
                 </ol>
               </li>
               <li>Git requirements:
                 <ol>
                   <li>
-                    A Git repository with frequent commits and meaningful commit messages that
+                    A Git repository with at least 20 commits and meaningful commit messages that
                     accurately reflect each set of changes that you make
                   </li>
                   <li>
@@ -154,16 +159,18 @@
               </li>
             </ul>
           </section>
-        </article>
-        <article class="preview">
-          <h3 id="project-two">Project Two: Redesign THIS Website!</h3>
-          <section class="description">
+        </div>
+        <button class="accordion">
+          <h3>Project Two: Website Redesign</h3>
+        </button>
+        <div class="panel">
+          <section id="project-two" class="description">
             <h4>Project Description</h4>
             <p>
               Some of the very worst designed websites you’ll come across are for banking, credit card
               payment, HR portals, and other non-optional websites for certain classes of customers or
-              workers. Self-selected teams of 3 students will redesign this website. Additionally, you will
-              add a compelling log in page, as if this were an on-line course for sale. Your redesigned should 
+              workers. Self-selected teams of 3 students will redesign a website assigned in class. Additionally, 
+              you will add a compelling log in page, as if this were an on-line course for sale. Your redesigned should 
               employ sound principles of human-computer interaction, user experience, and emotional design.
             </p>
           </section>
@@ -297,10 +304,12 @@
               </li>
             </ul>
           </section>
-        </article>
-        <article>
-          <h3 id="project-three">Project Three: User-Tested, Revised Web Portal</h3>
-          <section class="description">
+        </div>
+        <button class="accordion">
+          <h3>Project Three: User-Tested, Revised Web Portal</h3>
+        </button>
+        <div class="panel">
+          <section id="project-thre" class="description">
             <h4>Project Description</h4>
             <p>
               The final project of the course asks you to subject your group’s redesign
@@ -375,7 +384,7 @@
               </li>
             </ul>
           </section>
-        </article>
+        </div>
       </section>
     </main>
     <footer id="footer">
